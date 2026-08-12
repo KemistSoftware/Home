@@ -1,0 +1,1222 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Kemist &mdash; Offline-First Billing &amp; Inventory Software for Pharmacies</title>
+<meta name="description" content="Kemist is fast, offline-first billing and inventory software for retail pharmacies and medical shops &mdash; batch and expiry, GST, drug registers, multi-terminal and multi-shop, running on a computer inside the shop." />
+
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="googlebot" content="index, follow" />
+<meta name="bingbot" content="index, follow" />
+<meta name="author" content="Kemist" />
+<meta name="application-name" content="Kemist" />
+<meta name="subject" content="Retail pharmacy billing, inventory and compliance software" />
+<meta name="keywords" content="pharmacy software, pharmacy billing software, medical shop software, medical shop billing software, chemist software, retail pharmacy software, pharmacy ERP, pharmacy POS software, offline billing software, offline pharmacy software, fast pharmacy billing, medicine search by salt, molecule search pharmacy software, GST billing software for pharmacy, pharmacy inventory software, drug inventory management software, batch and expiry management software, expiry tracking software, MRP and discount billing, drug register software, multi terminal pharmacy billing, multi store pharmacy software, pharmacy chain software, pharmacy accounting software, pharmacy software India, medical store software" />
+<meta name="theme-color" content="#FAFAF9" />
+<meta name="color-scheme" content="light" />
+
+<link rel="canonical" href="https://kemist.in/" />
+<link rel="alternate" hreflang="en-in" href="https://kemist.in/" />
+<link rel="alternate" hreflang="x-default" href="https://kemist.in/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Kemist" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:url" content="https://kemist.in/" />
+<meta property="og:title" content="Kemist &mdash; Offline-First Billing &amp; Inventory Software for Pharmacies" />
+<meta property="og:description" content="Fast, modern billing for retail pharmacies &mdash; running on a computer inside the shop. Early access open." />
+<meta property="og:image" content="https://kemist.in/og.png" />
+<meta property="og:image:secure_url" content="https://kemist.in/og.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Kemist &mdash; offline-first billing software for retail pharmacies" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kemist &mdash; Offline-First Billing &amp; Inventory Software for Pharmacies" />
+<meta name="twitter:description" content="Fast, modern billing for retail pharmacies &mdash; running on a computer inside the shop. Early access open." />
+<meta name="twitter:image" content="https://kemist.in/og.png" />
+<meta name="twitter:image:alt" content="Kemist &mdash; offline-first billing software for retail pharmacies" />
+
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" type="image/svg+xml" href="/kemist-favicon.svg" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#FAFAF9; --surface:#FFFFFF; --surface-2:#F4F4F3; --border:#E4E4E2;
+    --ink:#1C1C1A; --muted:#6E6E6A;
+    --accent:#2456E6; --accent-hover:#1B44BF; --accent-wash:#F2F5FE;
+    --green:#127A4A; --green-deep:#0D6039; --green-soft:#EFF7F2; --green-line:#CBE6D8;
+    --pos:#178A50; --pos-bg:#E9F6EF; --pos-line:#CBE6D8;
+    --warn:#B96A00; --warn-bg:#FCF3E3; --warn-line:#EFDCB8;
+    --neg:#C6222F;  --neg-bg:#FCEBEC;  --neg-line:#F2CCCF;
+    --shadow:0 1px 2px rgb(0 0 0 / .06);
+    --gutter:20px;
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:Inter,system-ui,-apple-system,sans-serif;
+    font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px; margin:0 auto; padding:0 var(--gutter)}
+
+  a{color:var(--accent); text-decoration:none}
+  a:hover{color:var(--accent-hover); text-decoration:underline}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px}
+
+  /* ---------- nav ---------- */
+  .nav{border-top:3px solid var(--green); border-bottom:1px solid var(--border); background:var(--bg)}
+  .nav-in{display:flex; align-items:center; justify-content:space-between; height:60px}
+  .mark{display:flex; align-items:center}
+  .logo{display:block; height:25px; width:auto}
+  .nav-note{font-size:13px; color:var(--muted)}
+
+  /* ---------- hero ---------- */
+  .hero{padding:66px 0 56px}
+  .hero-grid{display:grid; grid-template-columns:.92fr 1.08fr; gap:0 44px; align-items:start;
+             grid-template-areas:"copy demo" "cta demo"}
+  .hero-copy{grid-area:copy}
+  .hero-cta{grid-area:cta}
+  .hero-demo{grid-area:demo; align-self:center; min-width:0}
+
+  .eyebrow{display:inline-flex; align-items:center; gap:8px;
+    font-size:12px; font-weight:500; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--muted); background:var(--surface); border:1px solid var(--border);
+    border-radius:999px; padding:5px 12px; margin-bottom:22px}
+  .eyebrow i{width:6px; height:6px; border-radius:50%; background:var(--green); display:inline-block; font-style:normal}
+
+  h1{font-size:44px; line-height:1.1; font-weight:600; letter-spacing:-.03em; margin:0 0 16px}
+  .lede{font-size:18px; color:var(--muted); margin:0; max-width:23em}
+
+  /* ---------- signup ---------- */
+  .signup{margin-top:28px; max-width:430px}
+  .field{display:flex; gap:8px}
+  .field input{flex:1; min-width:0; height:44px; padding:0 13px;
+    font:inherit; font-size:15px; color:var(--ink);
+    background:var(--surface); border:1px solid var(--border); border-radius:6px}
+  .field input::placeholder{color:#9A9A96}
+  .field input:focus{outline:2px solid var(--accent); outline-offset:1px; border-color:var(--accent)}
+  .btn{height:44px; padding:0 18px; white-space:nowrap;
+    font:inherit; font-size:15px; font-weight:500; color:#fff;
+    background:var(--green); border:1px solid var(--green); border-radius:6px;
+    cursor:pointer; transition:background 110ms ease, border-color 110ms ease}
+  .btn:hover{background:var(--green-deep); border-color:var(--green-deep)}
+  .btn:disabled{opacity:.55; cursor:default}
+  .sub{margin-top:10px; font-size:13px; color:var(--muted); min-height:20px}
+  .sub.ok{color:var(--pos); font-weight:500}
+  .sub.err{color:var(--neg)}
+
+  /* ---------- counter panel ---------- */
+  .counter{background:var(--surface); border:1px solid var(--border); border-radius:8px;
+    box-shadow:var(--shadow); overflow:hidden; font-size:13px;
+    transition:border-color 140ms ease, box-shadow 140ms ease}
+  .counter.live{border-color:#CFD8F5; box-shadow:0 1px 2px rgb(0 0 0/.06), 0 0 0 3px var(--accent-wash)}
+  .counter-top{display:flex; align-items:center; justify-content:space-between; gap:10px;
+    padding:9px 12px; border-bottom:1px solid var(--border); background:var(--surface-2)}
+  .counter-title{font-size:12px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--muted)}
+  .chip{display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--muted)}
+  .chip i{width:7px; height:7px; border-radius:50%; background:var(--muted); font-style:normal; transition:background 160ms ease}
+  .chip.is-sync{color:var(--warn)} .chip.is-sync i{background:var(--warn)}
+  .chip.is-ok{color:var(--pos)}    .chip.is-ok i{background:var(--pos)}
+
+  .search{display:flex; align-items:center; gap:9px; padding:9px 12px; border-bottom:1px solid var(--border)}
+  .search .slash{font-size:11px; font-weight:500; color:var(--muted); border:1px solid var(--border); border-radius:4px; padding:1px 6px; flex:none}
+  #q{flex:1; min-width:0; border:0; outline:0; background:transparent; padding:2px 0;
+     font:inherit; font-size:15px; font-weight:500; color:var(--ink); caret-color:var(--accent)}
+  #q::placeholder{color:#9A9A96; font-weight:400}
+  .ms{font-size:11px; color:var(--muted); font-variant-numeric:tabular-nums; white-space:nowrap; flex:none}
+
+  table{width:100%; border-collapse:collapse; table-layout:fixed; font-variant-numeric:tabular-nums}
+  th{font-size:10px; font-weight:500; letter-spacing:.05em; text-transform:uppercase; color:var(--muted);
+     text-align:left; padding:6px 10px; border-bottom:1px solid var(--border); background:var(--surface)}
+  td{padding:5px 10px; border-bottom:1px solid var(--border); color:var(--ink); overflow:hidden}
+  th.num, td.num{text-align:right}
+  .c-batch{width:112px} .c-qty{width:62px} .c-rate{width:104px}
+
+  .ln1{font-size:13px; line-height:1.3; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .ln2{font-size:11px; line-height:1.3; color:var(--muted); margin-top:1px;
+       white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .form{font-size:9px; font-weight:600; letter-spacing:.05em; color:var(--muted);
+        border:1px solid var(--border); border-radius:3px; padding:0 4px; margin-left:5px}
+  .mrp{text-decoration:line-through}
+  .off{color:var(--pos); font-weight:500}
+  .exp-soon{color:var(--warn); font-weight:500}
+  .exp-bad{color:var(--neg); font-weight:600}
+  .qty-low{color:var(--warn); font-weight:500}
+
+  .rows tr{cursor:pointer}
+  .rows tr:hover td{background:var(--surface-2)}
+  .rows tr.focus td{background:var(--accent-wash); box-shadow:inset 2px 0 0 var(--accent)}
+  .rows tr.focus:hover td{background:var(--accent-wash)}
+  .rows tr.dead td{background:#FDF4F5}
+  .rows tr.dead.focus td{background:var(--neg-bg); box-shadow:inset 2px 0 0 var(--neg)}
+  .rows tr.line{cursor:default}
+  .rows tr.line:hover td{background:transparent}
+  .rows tr.paidrow td{background:var(--pos-bg); color:var(--pos); box-shadow:inset 2px 0 0 var(--pos)}
+  .rows tr.paidrow .ln2{color:var(--pos)}
+  td.empty{color:var(--muted); height:66px; text-align:center; cursor:default}
+  .rows tr:last-child td{border-bottom:0}
+  .rows tr.anim{animation:rowin 150ms ease}
+  @keyframes rowin{from{opacity:0; transform:translateY(-2px)} to{opacity:1; transform:none}}
+
+  .counter-foot{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    padding:9px 12px; border-top:1px solid var(--border); background:var(--surface-2)}
+  .keys{display:flex; gap:6px; flex-wrap:wrap}
+  .key{font-size:11px; font-weight:500; color:var(--muted); cursor:pointer;
+    border:1px solid var(--border); background:var(--surface); border-radius:4px; padding:2px 7px;
+    transition:background 90ms ease, color 90ms ease, border-color 90ms ease, transform 90ms ease}
+  .key:hover{color:var(--ink); border-color:#CFCFCB}
+  .key.hit{background:var(--accent); border-color:var(--accent); color:#fff; transform:translateY(1px)}
+  .totals{text-align:right; line-height:1.25}
+  .totals .t1{font-size:12px; color:var(--muted)}
+  .totals .t1 b{font-size:17px; font-weight:600; color:var(--ink); font-variant-numeric:tabular-nums; margin-left:6px}
+  .totals .t2{font-size:11px; color:var(--pos); font-variant-numeric:tabular-nums; min-height:14px}
+
+  .ct-left{display:flex; align-items:center; gap:8px; min-width:0}
+  .mode{font-size:10px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; white-space:nowrap;
+        color:var(--muted); border:1px solid var(--border); border-radius:999px; padding:1px 7px;
+        transition:color 140ms ease, background 140ms ease, border-color 140ms ease}
+  .mode.on{color:var(--accent); border-color:#C3CFF7; background:var(--accent-wash)}
+  .search.invite{animation:invite 2.4s ease-in-out infinite}
+  @keyframes invite{0%,100%{background:var(--surface)} 50%{background:var(--accent-wash)}}
+
+  .steps{display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 0}
+  .step{display:inline-flex; align-items:center; gap:7px; font:inherit; font-size:12px; cursor:pointer;
+    color:var(--muted); background:var(--surface); border:1px solid var(--border);
+    border-radius:999px; padding:3px 11px 3px 4px;
+    transition:color 120ms ease, background 120ms ease, border-color 120ms ease}
+  .step b{width:17px; height:17px; border-radius:50%; flex:none;
+    background:var(--surface-2); color:var(--muted); border:1px solid var(--border);
+    font-size:10px; font-weight:600; display:flex; align-items:center; justify-content:center}
+  .step:hover{color:var(--ink); border-color:#CFCFCB}
+  .step.now{color:var(--ink); border-color:#C3CFF7; background:var(--accent-wash)}
+  .step.now b{background:var(--accent); border-color:var(--accent); color:#fff}
+  .step.done{color:var(--pos); border-color:var(--pos-line); background:var(--pos-bg)}
+  .step.done b{background:var(--pos); border-color:var(--pos); color:#fff}
+  .btn.nudge{animation:nudge 1.8s ease-in-out 2}
+  @keyframes nudge{0%,100%{box-shadow:0 0 0 0 rgba(18,122,74,0)} 50%{box-shadow:0 0 0 5px rgba(18,122,74,.16)}}
+
+  .tryrow{display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin:9px 0 0}
+  .trylabel{font-size:12px; color:var(--muted)}
+  .try{font:inherit; font-size:12px; color:var(--muted); cursor:pointer;
+    border:1px solid var(--border); background:var(--surface); border-radius:999px; padding:2px 10px;
+    transition:color 90ms ease, border-color 90ms ease, background 90ms ease}
+  .try:hover{color:var(--ink); border-color:#CFCFCB; background:var(--surface-2)}
+  .hint{margin:8px 2px 0; font-size:12px; color:var(--muted)}
+  .hint b{color:var(--ink); font-weight:500}
+
+  /* ---------- tiles ---------- */
+  .tiles{border-top:1px solid var(--border); padding:48px 0 44px}
+  .tile-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+  .tile{background:var(--surface); border:1px solid var(--border); border-radius:8px;
+        box-shadow:var(--shadow); padding:16px 16px 15px; overflow:hidden}
+  .stage{height:132px; display:flex; flex-direction:column; gap:7px; font-size:12px}
+  .tile h2{font-size:14px; font-weight:600; margin:14px 0 0; letter-spacing:-.005em; display:flex; align-items:center; gap:8px}
+  .tile h2::before{content:""; width:7px; height:7px; border-radius:2px; background:var(--green); flex:none}
+  .stage-head{display:flex; align-items:center; justify-content:space-between; gap:8px; color:var(--muted)}
+  .stage-head b{color:var(--ink); font-weight:600; font-variant-numeric:tabular-nums}
+  .stage-note{margin-top:auto; color:var(--muted); min-height:17px}
+  .stage-note b{color:var(--ink); font-weight:500}
+  .mini{font:inherit; font-size:11px; font-weight:500; color:var(--muted); cursor:pointer;
+    border:1px solid var(--border); background:var(--surface); border-radius:999px; padding:2px 10px;
+    transition:background 100ms ease, color 100ms ease, border-color 100ms ease}
+  .mini:hover{color:var(--ink); border-color:#CFCFCB; background:var(--surface-2)}
+
+  .queue{display:flex; gap:4px}
+  .queue span{flex:1; height:26px; border-radius:4px; background:var(--surface-2);
+    border:1px solid var(--border); transition:background 160ms ease, border-color 160ms ease, transform 160ms ease}
+  .queue span.filled{background:var(--accent); border-color:var(--accent)}
+  .queue span.sending{background:var(--warn); border-color:var(--warn); transform:translateY(-3px)}
+  .queue span.done{background:var(--pos-bg); border-color:var(--pos-line)}
+  .wire{height:2px; border-radius:2px; background:var(--border); position:relative; overflow:hidden}
+  .wire.live::after{content:""; position:absolute; inset:0; width:34%; border-radius:2px;
+    background:var(--pos); animation:slide 900ms linear infinite}
+  @keyframes slide{from{transform:translateX(-100%)} to{transform:translateX(300%)}}
+
+  .kb{border:1px solid var(--border); border-radius:6px; background:var(--surface-2);
+      padding:6px 7px; display:flex; flex-direction:column; gap:3px}
+  .kb-q{font-weight:500; height:17px}
+  .kb-q .c{display:inline-block; width:1.5px; height:12px; background:var(--accent); vertical-align:-2px; margin-left:1px}
+  .kb-row{display:flex; justify-content:space-between; gap:8px; padding:2px 5px; border-radius:4px;
+          color:var(--muted); font-variant-numeric:tabular-nums; opacity:0;
+          transition:opacity 140ms ease, background 140ms ease, color 140ms ease, box-shadow 140ms ease}
+  .kb-row.show{opacity:1}
+  .kb-row.sel{background:var(--accent-wash); color:var(--ink); box-shadow:inset 2px 0 0 var(--accent)}
+  .kb-row.paid{background:var(--pos-bg); color:var(--pos); box-shadow:inset 2px 0 0 var(--pos); font-weight:500}
+  .caps{display:flex; gap:5px}
+  .cap{min-width:30px; height:26px; padding:0 8px; display:flex; align-items:center; justify-content:center;
+    font:inherit; font-size:11px; font-weight:500; color:var(--muted); cursor:pointer;
+    border:1px solid var(--border); border-bottom-width:2px; background:var(--surface); border-radius:5px;
+    transition:transform 90ms ease, background 90ms ease, color 90ms ease, border-color 90ms ease}
+  .cap:hover{color:var(--ink); border-color:#CFCFCB}
+  .cap.hit{background:var(--accent); border-color:var(--accent); color:#fff; transform:translateY(1px)}
+
+  .fefo{display:flex; flex-direction:column; gap:4px}
+  .fefo-row{display:flex; align-items:center; justify-content:space-between; gap:8px; cursor:pointer;
+    padding:4px 7px; border-radius:5px; border:1px solid transparent; background:var(--surface-2);
+    color:var(--muted); font-variant-numeric:tabular-nums; opacity:.3;
+    transition:opacity 160ms ease, background 180ms ease, border-color 180ms ease, color 180ms ease, box-shadow 180ms ease}
+  .fefo-row.seen{opacity:1}
+  .fefo-row.seen:hover{border-color:#D5D5D1}
+  .fefo-row.scan{box-shadow:inset 2px 0 0 var(--accent)}
+  .fefo-row.bad{background:var(--neg-bg); border-color:var(--neg-line); color:var(--neg)}
+  .fefo-row.pick{background:var(--warn-bg); border-color:var(--warn-line); color:var(--warn); box-shadow:inset 2px 0 0 var(--accent)}
+  .fefo-row.shake{animation:shake 260ms ease}
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+  .fefo-row .t{font-size:10px; font-weight:600; letter-spacing:.04em; min-width:56px; text-align:right}
+
+  /* ---------- qualities ---------- */
+  .attrs{border-top:1px solid var(--border); padding:44px 0 48px}
+  .attr-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:28px}
+  .attr .mk{display:block; width:8px; height:3px; border-radius:2px; background:var(--green);
+            margin-bottom:12px; transition:width 200ms cubic-bezier(.4,0,.2,1)}
+  .attr:hover .mk, .attr:focus-within .mk{width:30px}
+  .attr h2{font-size:15px; font-weight:600; margin:0 0 5px; letter-spacing:-.01em}
+  .attr p{margin:0; font-size:14px; color:var(--muted)}
+
+  /* ---------- closing ---------- */
+  .close{background:var(--green-soft); border-top:1px solid var(--green-line); border-bottom:1px solid var(--green-line);
+         padding:38px 0 40px}
+  .close p{margin:0; font-size:20px; font-weight:500; letter-spacing:-.015em}
+  .close p span{color:var(--muted); font-weight:400}
+  .close .fine{margin-top:12px; font-size:14px; color:var(--muted); max-width:62em; font-weight:400; letter-spacing:0}
+
+  footer{padding:26px 0 44px; font-size:13px; color:var(--muted)}
+  .foot-in{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
+
+  @media (max-width:980px){
+    .hero-grid{gap:0 34px}
+    h1{font-size:40px}
+    .c-batch{width:100px} .c-qty{width:54px} .c-rate{width:94px}
+  }
+
+  /* one column: headline, then the demo, then the sign-up */
+  @media (max-width:880px){
+    .hero{padding:40px 0 36px}
+    .hero-grid{grid-template-columns:1fr; grid-template-areas:"copy" "demo" "cta"; gap:28px 0}
+    .hero-demo{align-self:stretch}
+    .lede{font-size:17px; max-width:none}
+    .signup{margin-top:0; max-width:none}
+    h1{font-size:34px}
+    .tile-grid{grid-template-columns:1fr}
+    .attr-grid{grid-template-columns:repeat(2,1fr); gap:26px}
+  }
+
+  /* narrow screens: every row becomes a stacked card, nothing is dropped */
+  @media (max-width:600px){
+    table{table-layout:auto}
+    table, thead, tbody, tr, td{display:block; width:auto}
+    thead{display:none}
+    .rows tr{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:2px 12px;
+             padding:9px 12px; border-bottom:1px solid var(--border)}
+    .rows tr:last-child{border-bottom:0}
+    .rows td{border:0; padding:0; width:auto; background:transparent}
+    .rows td:nth-child(1){grid-area:1/1/2/2}
+    .rows td:nth-child(2){grid-area:2/1/3/2}
+    .rows td:nth-child(3){grid-area:2/2/3/3; text-align:right}
+    .rows td:nth-child(4){grid-area:1/2/2/3; text-align:right}
+    .rows tr:hover td, .rows tr.focus td, .rows tr.dead td, .rows tr.paidrow td{background:transparent}
+    .rows tr.focus{background:var(--accent-wash); box-shadow:inset 2px 0 0 var(--accent)}
+    .rows tr.dead{background:#FDF4F5}
+    .rows tr.dead.focus{background:var(--neg-bg); box-shadow:inset 2px 0 0 var(--neg)}
+    .rows tr.paidrow{background:var(--pos-bg); color:var(--pos); box-shadow:inset 2px 0 0 var(--pos)}
+    .rows td.empty{grid-column:1/-1; height:auto; padding:20px 0; text-align:center}
+    .ln1{font-size:13.5px} .ln2{font-size:11.5px}
+    #q, .field input{font-size:16px}   /* 16px keeps iOS from zooming on focus */
+    #q::placeholder{font-size:15px}
+    .ms{font-size:10px}
+    .counter-foot{gap:10px}
+    .totals{margin-left:auto}
+    .key, .try, .step, .mini{min-height:30px}
+    .step{padding:4px 12px 4px 5px}
+    .try{padding:4px 11px}
+  }
+
+  @media (max-width:460px){
+    .logo{height:22px}
+    h1{font-size:29px}
+    .lede{font-size:16px}
+    .field{flex-direction:column}
+    .btn{width:100%}
+    .attr-grid{grid-template-columns:1fr; gap:22px}
+    .close p{font-size:17px}
+    .wide{display:none}
+    .search{gap:7px; padding:8px 10px}
+    .rows tr{padding:9px 10px}
+    .counter-foot{padding:9px 10px}
+    .key{padding:3px 6px}
+  }
+
+  @media (max-width:360px){
+    h1{font-size:26px}
+    .keys{gap:4px}
+    .ms{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important; transition:none !important}
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kemist.in/#organization",
+      "name": "Kemist",
+      "alternateName": "Kemist Software",
+      "url": "https://kemist.in/",
+      "email": "admin@kemist.in",
+      "slogan": "Offline-first billing software for retail pharmacies.",
+      "description": "Kemist builds fast, offline-first billing, inventory and compliance software for retail pharmacies and medical shops.",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://kemist.in/#logo",
+        "url": "https://kemist.in/icon-512.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Kemist"
+      },
+      "image": { "@id": "https://kemist.in/#logo" },
+      "areaServed": { "@type": "Country", "name": "India" },
+      "knowsAbout": [
+        "retail pharmacy management",
+        "pharmacy billing and point of sale",
+        "medicine search by brand, molecule and manufacturer",
+        "drug batch and expiry control",
+        "MRP, selling rate and discount handling",
+        "GST invoicing and returns",
+        "statutory drug registers",
+        "offline-first software architecture",
+        "multi-terminal and multi-shop retail operations"
+      ],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "admin@kemist.in",
+        "availableLanguage": ["English"]
+      }]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kemist.in/#website",
+      "url": "https://kemist.in/",
+      "name": "Kemist",
+      "description": "Fast, offline-first billing and inventory software for retail pharmacies.",
+      "publisher": { "@id": "https://kemist.in/#organization" },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kemist.in/#webpage",
+      "url": "https://kemist.in/",
+      "name": "Kemist \u2014 Offline-First Billing & Inventory Software for Pharmacies",
+      "description": "Kemist is fast, offline-first billing and inventory software for retail pharmacies and medical shops \u2014 batch and expiry, GST, drug registers, multi-terminal and multi-shop, running on a computer inside the shop.",
+      "isPartOf": { "@id": "https://kemist.in/#website" },
+      "about": { "@id": "https://kemist.in/#software" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://kemist.in/og.png",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://kemist.in/#software",
+      "name": "Kemist",
+      "url": "https://kemist.in/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Pharmacy billing, inventory and compliance software",
+      "operatingSystem": "Windows, Linux; browser-based terminals over the shop's local network",
+      "description": "Kemist is retail pharmacy software that runs on a computer inside the shop. Billing continues without an internet connection, stock is tracked by batch and expiry, and GST returns and drug registers are produced from the shop's own records.",
+      "featureList": [
+        "Medicine search across brand, molecule, strength, dosage form and manufacturer",
+        "Offline-first billing that continues during an internet outage",
+        "Keyboard-first counter workflow with barcode scanner input",
+        "Batch, expiry and stock on hand shown on every line",
+        "MRP, selling rate and discount handled per line",
+        "Purchases, goods receipt, sale and purchase returns",
+        "GST invoicing, credit and debit notes, and return workings",
+        "Statutory drug registers",
+        "Double-entry accounting, day book, ledgers and party outstanding",
+        "Multiple billing terminals over the shop's own network",
+        "Multi-shop account structure with scoped roles",
+        "Encrypted local storage and encrypted off-site backup",
+        "Owner-controlled export of statutory records to PDF and Excel"
+      ],
+      "softwareVersion": "Pre-release",
+      "releaseNotes": "Early access. The first 50 shops join the beta free.",
+      "publisher": { "@id": "https://kemist.in/#organization" },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/PreOrder",
+        "priceCurrency": "INR",
+        "price": "0",
+        "description": "Free beta access for the first 50 shops",
+        "seller": { "@id": "https://kemist.in/#organization" }
+      },
+      "inLanguage": "en-IN"
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <div class="mark"><svg class="logo" viewBox="0 0 284.99 60.0" fill="none" role="img" aria-label="Kemist" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 55.000)"><g transform="translate(-11.8421 -64.4737) scale(0.789474)"><rect x="15.0" y="12.0" width="14.0" height="76.0" rx="7.0" fill="#127A4A"/><path d="M72.0 19.0L45.0 50.0L72.0 81.0" fill="none" stroke="#127A4A" stroke-width="14.0" stroke-linecap="round" stroke-linejoin="round"/></g><path transform="translate(73.365 0)" d="M4.16 0.00V-50.00H13.02V-25.87Q14.97 -28.15 16.93 -30.40Q18.89 -32.65 20.84 -34.93L34.13 -50.00H45.07L25.84 -28.36L45.40 0.00H35.07L19.87 -22.38L13.02 -14.63V0.00Z M64.30 0.81Q59.00 0.81 55.11 -1.58Q51.22 -3.96 49.12 -8.14Q47.02 -12.32 47.02 -17.68Q47.02 -23.09 49.19 -27.27Q51.35 -31.44 55.18 -33.84Q59.00 -36.24 63.97 -36.24Q69.07 -36.24 72.90 -33.89Q76.72 -31.54 78.83 -27.40Q80.95 -23.26 80.95 -17.82V-15.50H55.31Q55.48 -11.17 57.86 -8.52Q60.24 -5.87 64.51 -5.87Q67.69 -5.87 69.77 -7.27Q71.86 -8.66 72.59 -10.94H80.51Q79.84 -7.48 77.58 -4.83Q75.31 -2.18 71.89 -0.69Q68.47 0.81 64.30 0.81ZM55.38 -21.34H72.83Q72.43 -25.13 70.09 -27.33Q67.76 -29.53 64.10 -29.53Q60.41 -29.53 58.11 -27.33Q55.81 -25.13 55.38 -21.34Z M85.66 0.00V-35.44H93.84V-29.30Q95.46 -32.72 98.31 -34.43Q101.16 -36.14 104.52 -36.14Q108.11 -36.14 110.86 -34.31Q113.61 -32.48 114.72 -29.43Q116.13 -32.48 119.11 -34.31Q122.10 -36.14 125.99 -36.14Q131.03 -36.14 134.45 -32.89Q137.87 -29.63 137.87 -23.39V0.00H129.38V-22.18Q129.38 -25.70 127.45 -27.33Q125.52 -28.96 122.80 -28.96Q119.58 -28.96 117.72 -26.95Q115.86 -24.93 115.86 -21.74V0.00H107.64V-22.58Q107.64 -25.47 105.82 -27.21Q104.01 -28.96 101.19 -28.96Q98.34 -28.96 96.23 -26.96Q94.11 -24.97 94.11 -21.14V0.00Z M144.32 0.00V-35.44H152.78V0.00ZM148.55 -40.70Q146.37 -40.70 144.93 -42.10Q143.48 -43.49 143.48 -45.54Q143.48 -47.58 144.93 -48.96Q146.37 -50.34 148.55 -50.34Q150.70 -50.34 152.14 -48.96Q153.59 -47.58 153.59 -45.54Q153.59 -43.49 152.14 -42.10Q150.70 -40.70 148.55 -40.70Z M173.16 0.84Q166.68 0.84 162.34 -2.20Q157.99 -5.23 157.59 -10.94H165.94Q166.21 -8.36 168.02 -6.93Q169.84 -5.50 173.02 -5.50Q176.08 -5.50 177.84 -6.71Q179.60 -7.92 179.60 -9.80Q179.60 -11.41 178.29 -12.38Q176.98 -13.36 174.77 -13.83L168.73 -15.07Q158.39 -17.21 158.39 -25.30Q158.39 -30.20 162.29 -33.20Q166.18 -36.21 172.66 -36.21Q179.10 -36.21 183.14 -33.04Q187.19 -29.87 187.32 -24.40H179.37Q179.30 -26.78 177.52 -28.32Q175.74 -29.87 172.86 -29.87Q170.07 -29.87 168.46 -28.62Q166.85 -27.38 166.85 -25.57Q166.85 -23.99 168.09 -23.00Q169.33 -22.01 171.55 -21.51L177.92 -20.20Q183.19 -19.09 185.69 -16.71Q188.19 -14.33 188.19 -10.44Q188.19 -6.98 186.26 -4.45Q184.33 -1.91 180.94 -0.54Q177.55 0.84 173.16 0.84Z M211.62 -35.44V-28.62H204.41V-10.17Q204.41 -8.26 205.18 -7.53Q205.95 -6.81 208.00 -6.81H211.62V0.00H206.52Q201.12 0.00 198.52 -2.18Q195.92 -4.36 195.92 -8.93V-28.62H189.74V-35.44H195.92V-45.10H204.41V-35.44Z" fill="#1C1C1A"/></g></svg></div>
+    <div class="nav-note">Early access</div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+      <span class="eyebrow"><i></i> Launching soon</span>
+      <h1>Software for the chemist's counter.</h1>
+      <p class="lede">Quick on its feet, quiet under load, and it runs inside your shop &mdash; from one counter to twenty.</p>
+    </div>
+
+    <div class="hero-cta">
+      <div class="signup">
+        <div class="field">
+          <label for="email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Email address</label>
+          <input id="email" type="email" inputmode="email" autocomplete="email" placeholder="you@yourshop.in" />
+          <button class="btn" id="join" type="button">Join the list</button>
+        </div>
+        <p class="sub" id="msg">First 50 shops join the beta free.</p>
+      </div>
+    </div>
+
+    <div class="hero-demo">
+      <div class="counter" id="panel">
+        <div class="counter-top">
+          <span class="ct-left">
+            <span class="counter-title">New bill</span>
+            <span class="mode" id="mode">Demo</span>
+          </span>
+          <span class="chip"><i></i> Offline &middot; billing normally</span>
+        </div>
+
+        <div class="search">
+          <span class="slash">/</span>
+          <label for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search medicines</label>
+          <input id="q" type="text" autocomplete="off" spellcheck="false" placeholder="Brand, molecule, strength, form, maker or batch&hellip;" />
+          <span class="ms" id="ms"></span>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th class="c-batch">Batch &middot; Expiry</th>
+              <th class="c-qty num">Qty</th>
+              <th class="c-rate num">Rate</th>
+            </tr>
+          </thead>
+          <tbody class="rows" id="rows"></tbody>
+        </table>
+
+        <div class="counter-foot">
+          <div class="keys">
+            <button class="key" id="k5" type="button">F5 Cash</button>
+            <button class="key" id="k6" type="button">F6 UPI</button>
+            <button class="key" id="k9" type="button">F9 Clear</button>
+          </div>
+          <div class="totals">
+            <div class="t1">Total <b id="total">&#8377;0.00</b></div>
+            <div class="t2" id="saved"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="steps" id="steps">
+        <button class="step" type="button" data-s="0"><b>1</b>Search</button>
+        <button class="step" type="button" data-s="1"><b>2</b>Choose</button>
+        <button class="step" type="button" data-s="2"><b>3</b>Add</button>
+        <button class="step" type="button" data-s="3"><b>4</b><span class="wide">Take&nbsp;</span>payment</button>
+      </div>
+
+      <div class="tryrow">
+        <span class="trylabel">Try</span>
+        <button class="try" type="button" data-t="paracetamol">paracetamol</button>
+        <button class="try" type="button" data-t="650">650</button>
+        <button class="try" type="button" data-t="syrup">syrup</button>
+        <button class="try" type="button" data-t="cipla">cipla</button>
+        <button class="try" type="button" data-t="MX7721">MX7721</button>
+      </div>
+      <p class="hint" id="hint">A demo is running &mdash; <b>tap</b> or <b>hover</b> the panel to take it over.</p>
+    </div>
+
+  </div>
+</header>
+
+<section class="tiles">
+  <div class="wrap tile-grid" id="tiles">
+
+    <div class="tile">
+      <div class="stage">
+        <div class="stage-head">
+          <span class="chip" id="netchip"><i></i> Offline</span>
+          <button class="mini" id="netbtn" type="button">Reconnect</button>
+        </div>
+        <div class="queue" id="queue">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="wire" id="wire"></div>
+        <div class="stage-note" id="netnote">Line is down. Billing continues.</div>
+      </div>
+      <h2>Offline is not an outage</h2>
+    </div>
+
+    <div class="tile">
+      <div class="stage">
+        <div class="kb">
+          <div class="kb-q" id="kbq"></div>
+          <div class="kb-row" id="kbr0"><span>PAN 40 TAB</span><span>126.00</span></div>
+          <div class="kb-row" id="kbr1"><span>PANTOP 40 TAB</span><span>118.75</span></div>
+        </div>
+        <div class="caps">
+          <button class="cap" type="button" data-k="0">/</button>
+          <button class="cap" type="button" data-k="1">&darr;</button>
+          <button class="cap" type="button" data-k="2">&#9166;</button>
+          <button class="cap" type="button" data-k="3">F5</button>
+        </div>
+        <div class="stage-note" id="kbnote">&nbsp;</div>
+      </div>
+      <h2>A bill in four keystrokes</h2>
+    </div>
+
+    <div class="tile">
+      <div class="stage">
+        <div class="stage-head"><span>MOX 500 CAP</span><span id="fefocount">3 batches</span></div>
+        <div class="fefo">
+          <div class="fefo-row" id="f0" tabindex="0" role="button"><span>DK1130</span><span>03/26</span><span class="t"></span></div>
+          <div class="fefo-row" id="f1" tabindex="0" role="button"><span>PN0912</span><span>11/26</span><span class="t"></span></div>
+          <div class="fefo-row" id="f2" tabindex="0" role="button"><span>MX7721</span><span>07/28</span><span class="t"></span></div>
+        </div>
+        <div class="stage-note" id="fefonote">&nbsp;</div>
+      </div>
+      <h2>Expiry decided for you</h2>
+    </div>
+
+  </div>
+</section>
+
+<section class="attrs">
+  <div class="wrap attr-grid">
+    <div class="attr">
+      <span class="mk"></span>
+      <h2>Ultrafast</h2>
+      <p>Answers arrive before you finish the word.</p>
+    </div>
+    <div class="attr">
+      <span class="mk"></span>
+      <h2>Flexible</h2>
+      <p>Bends to the way your counter already runs.</p>
+    </div>
+    <div class="attr">
+      <span class="mk"></span>
+      <h2>Modern</h2>
+      <p>Built for this decade's hardware and habits.</p>
+    </div>
+    <div class="attr">
+      <span class="mk"></span>
+      <h2>Reliable</h2>
+      <p>Stays quiet on the busiest day of the month.</p>
+    </div>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap">
+    <p>Your data stays in your shop. <span>Export it any day, yourself.</span></p>
+    <p class="fine">Kemist is retail pharmacy software for Indian medical shops &mdash; billing, inventory, batch and expiry, GST and drug registers &mdash; built to run offline on ordinary shop hardware, on one counter or across a group of shops.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>&copy; <span id="yr">2026</span> Kemist</div>
+    <div><a href="mailto:admin@kemist.in">admin@kemist.in</a></div>
+  </div>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------
+   CONFIG - point FORM_ENDPOINT at Formspree / a Vercel function to
+   collect emails. Left empty, the button opens the visitor's mail
+   app addressed to CONTACT_EMAIL instead.
+------------------------------------------------------------------ */
+const FORM_ENDPOINT = "";                 // e.g. "https://formspree.io/f/xxxxxxx"
+const CONTACT_EMAIL = "admin@kemist.in";
+
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const wait  = ms => new Promise(r => setTimeout(r, ms));
+const $ = id => document.getElementById(id);
+const money = n => n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+const rupee = n => "\u20B9" + money(n);
+
+/* ---------------- email capture ---------------- */
+const input = $("email"), btn = $("join"), msg = $("msg");
+
+function setMsg(text, kind){
+  msg.textContent = text;
+  msg.className = "sub" + (kind ? " " + kind : "");
+}
+
+async function join(){
+  const email = input.value.trim();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    setMsg("Enter an email address we can reach you on.", "err");
+    input.focus();
+    return;
+  }
+  if(!FORM_ENDPOINT){
+    window.location.href = "mailto:" + CONTACT_EMAIL +
+      "?subject=" + encodeURIComponent("Kemist early access") +
+      "&body="    + encodeURIComponent("Shop name:\nTown:\nPhone:\nEmail: " + email + "\n");
+    setMsg("Opening your mail app - send it and you're on the list.");
+    return;
+  }
+  btn.disabled = true;
+  setMsg("Adding you\u2026");
+  try{
+    const res = await fetch(FORM_ENDPOINT, {
+      method:"POST",
+      headers:{ "Content-Type":"application/json", "Accept":"application/json" },
+      body: JSON.stringify({ email })
+    });
+    if(!res.ok) throw new Error(res.status);
+    input.value = "";
+    setMsg("You're on the list.", "ok");
+  }catch(e){
+    setMsg("That didn't go through. Write to " + CONTACT_EMAIL + " instead.", "err");
+  }finally{ btn.disabled = false; }
+}
+btn.addEventListener("click", join);
+input.addEventListener("keydown", e => { if(e.key === "Enter") join(); });
+
+/* ==================================================================
+   HERO - a counter you can drive
+   n brand · s molecule · d dose · f form · m maker
+   b batch · e expiry (YYYY-MM) · r selling rate · p MRP · k qty on hand
+================================================================== */
+const DRUGS = [
+  {n:"DOLO 650",       s:"paracetamol",                        d:"650 mg",        f:"TAB",     m:"Micro Labs",   b:"DL2411", e:"2027-03", r:31.50,  p:34.00,  k:148},
+  {n:"DOLO 650",       s:"paracetamol",                        d:"650 mg",        f:"TAB",     m:"Micro Labs",   b:"DL1902", e:"2026-05", r:31.50,  p:34.00,  k:8},
+  {n:"DOLO 500",       s:"paracetamol",                        d:"500 mg",        f:"TAB",     m:"Micro Labs",   b:"DK1130", e:"2026-09", r:22.40,  p:24.00,  k:36},
+  {n:"CROCIN ADVANCE", s:"paracetamol",                        d:"500 mg",        f:"TAB",     m:"GSK",          b:"CR8802", e:"2028-01", r:30.10,  p:32.00,  k:64},
+  {n:"CALPOL 650",     s:"paracetamol",                        d:"650 mg",        f:"TAB",     m:"GSK",          b:"CP5521", e:"2027-06", r:29.80,  p:31.50,  k:22},
+  {n:"CALPOL 250",     s:"paracetamol",                        d:"250 mg/5 ml",   f:"SYRUP",   m:"GSK",          b:"CS2214", e:"2027-02", r:86.50,  p:92.00,  k:12},
+  {n:"PAN 40",         s:"pantoprazole",                       d:"40 mg",         f:"TAB",     m:"Alkem",        b:"PN0912", e:"2026-11", r:126.00, p:135.00, k:54},
+  {n:"PANTOP 40",      s:"pantoprazole",                       d:"40 mg",         f:"TAB",     m:"Aristo",       b:"PT4407", e:"2028-05", r:118.75, p:128.00, k:90},
+  {n:"PAN D",          s:"pantoprazole + domperidone",         d:"40 + 30 mg",    f:"CAP",     m:"Alkem",        b:"PD7719", e:"2028-02", r:196.00, p:210.00, k:41},
+  {n:"OMEZ 20",        s:"omeprazole",                         d:"20 mg",         f:"CAP",     m:"Dr Reddy's",   b:"OM3140", e:"2027-08", r:58.60,  p:62.00,  k:76},
+  {n:"RANTAC 150",     s:"ranitidine",                         d:"150 mg",        f:"TAB",     m:"JB Chemicals", b:"RT2205", e:"2027-04", r:34.20,  p:36.50,  k:28},
+  {n:"MOX 500",        s:"amoxycillin",                        d:"500 mg",        f:"CAP",     m:"Cipla",        b:"MX7721", e:"2027-07", r:92.30,  p:98.00,  k:60},
+  {n:"NOVAMOX 500",    s:"amoxycillin",                        d:"500 mg",        f:"CAP",     m:"Cipla",        b:"NV3318", e:"2028-02", r:88.00,  p:94.00,  k:45},
+  {n:"AUGMENTIN 625",  s:"amoxycillin + clavulanic acid",      d:"500 + 125 mg",  f:"TAB",     m:"GSK",          b:"AG9004", e:"2027-12", r:206.50, p:223.00, k:18},
+  {n:"AZITHRAL 500",   s:"azithromycin",                       d:"500 mg",        f:"TAB",     m:"Alembic",      b:"AZ1177", e:"2027-10", r:112.00, p:120.00, k:33},
+  {n:"TAXIM-O 200",    s:"cefixime",                           d:"200 mg",        f:"TAB",     m:"Alkem",        b:"TX6650", e:"2028-03", r:148.00, p:158.00, k:26},
+  {n:"MONOCEF 1G",     s:"ceftriaxone",                        d:"1 g",           f:"INJ",     m:"Aristo",       b:"MC2091", e:"2027-05", r:64.00,  p:68.00,  k:6},
+  {n:"COMBIFLAM",      s:"ibuprofen + paracetamol",            d:"400 + 325 mg",  f:"TAB",     m:"Sanofi",       b:"CB4432", e:"2027-09", r:44.60,  p:47.50,  k:112},
+  {n:"ZERODOL SP",     s:"aceclofenac + paracetamol",          d:"100 + 325 mg",  f:"TAB",     m:"Ipca",         b:"ZR8813", e:"2027-11", r:98.20,  p:105.00, k:58},
+  {n:"VOLINI GEL",     s:"diclofenac diethylamine",            d:"1.16% 30 g",    f:"GEL",     m:"Sun Pharma",   b:"VG5567", e:"2028-06", r:135.00, p:145.00, k:20},
+  {n:"MONTAIR LC",     s:"montelukast + levocetirizine",       d:"10 + 5 mg",     f:"TAB",     m:"Cipla",        b:"ML3302", e:"2028-01", r:186.00, p:198.00, k:37},
+  {n:"ALLEGRA 120",    s:"fexofenadine",                       d:"120 mg",        f:"TAB",     m:"Sanofi",       b:"AL7745", e:"2028-04", r:172.00, p:185.00, k:24},
+  {n:"CETZINE",        s:"cetirizine",                         d:"10 mg",         f:"TAB",     m:"GSK",          b:"CZ1120", e:"2027-10", r:28.90,  p:31.00,  k:88},
+  {n:"ASTHALIN",       s:"salbutamol",                         d:"100 mcg",       f:"INHALER", m:"Cipla",        b:"AS9931", e:"2027-08", r:124.00, p:132.00, k:14},
+  {n:"GLYCOMET 500",   s:"metformin",                          d:"500 mg",        f:"TAB",     m:"USV",          b:"GM2244", e:"2028-02", r:38.70,  p:41.00,  k:96},
+  {n:"JANUMET 50/500", s:"sitagliptin + metformin",            d:"50 + 500 mg",   f:"TAB",     m:"MSD",          b:"JM6618", e:"2027-07", r:214.50, p:229.00, k:30},
+  {n:"TELMA 40",       s:"telmisartan",                        d:"40 mg",         f:"TAB",     m:"Glenmark",     b:"TM4409", e:"2027-12", r:96.40,  p:103.00, k:52},
+  {n:"AMLONG 5",       s:"amlodipine",                         d:"5 mg",          f:"TAB",     m:"Micro Labs",   b:"AM7752", e:"2028-03", r:42.30,  p:45.00,  k:74},
+  {n:"ATORVA 10",      s:"atorvastatin",                       d:"10 mg",         f:"TAB",     m:"Zydus",        b:"AT1163", e:"2027-09", r:78.00,  p:83.00,  k:61},
+  {n:"ROSUVAS 10",     s:"rosuvastatin",                       d:"10 mg",         f:"TAB",     m:"Sun Pharma",   b:"RS8890", e:"2028-05", r:142.00, p:152.00, k:29},
+  {n:"ECOSPRIN 75",    s:"aspirin",                            d:"75 mg",         f:"TAB",     m:"USV",          b:"EC3307", e:"2027-11", r:14.60,  p:15.50,  k:130},
+  {n:"CLOPITAB 75",    s:"clopidogrel",                        d:"75 mg",         f:"TAB",     m:"Ipca",         b:"CT5528", e:"2027-06", r:88.90,  p:95.00,  k:43},
+  {n:"THYRONORM 50",   s:"thyroxine",                          d:"50 mcg",        f:"TAB",     m:"Abbott",       b:"TN2216", e:"2028-01", r:158.00, p:168.00, k:47},
+  {n:"SHELCAL 500",    s:"calcium carbonate + vitamin D3",     d:"500 mg + 250 IU",f:"TAB",    m:"Torrent",      b:"SC4471", e:"2028-04", r:126.00, p:135.00, k:39},
+  {n:"ZINCOVIT",       s:"multivitamin + zinc",                d:"zinc 22 mg",         f:"TAB",     m:"Apex",         b:"ZV9903", e:"2027-10", r:105.00, p:112.00, k:55},
+  {n:"BECOSULES",      s:"vitamin B complex + C",              d:"with 75 mg C",         f:"CAP",     m:"Pfizer",       b:"BC1194", e:"2028-02", r:47.20,  p:50.00,  k:68},
+  {n:"BETADINE",       s:"povidone iodine",                    d:"5% 15 ml",      f:"SOLN",    m:"Win-Medicare", b:"BD2287", e:"2028-03", r:52.00,  p:56.00,  k:17},
+  {n:"ORS ORANGE",     s:"oral rehydration salts",             d:"21.8 g",        f:"SACHET",  m:"FDC",          b:"OR4412", e:"2027-01", r:22.00,  p:24.00,  k:210}
+];
+
+const NOW = new Date();
+const NOW_M = NOW.getFullYear() * 12 + NOW.getMonth();
+
+/* expiry -> { label:"03/27", life:"(7 mo)", cls:"" | "exp-soon" | "exp-bad", dead:bool } */
+function expiry(ym){
+  const y = +ym.slice(0,4), m = +ym.slice(5,7);
+  const left = (y * 12 + (m - 1)) - NOW_M;
+  const label = ("0" + m).slice(-2) + "/" + String(y).slice(2);
+  if(left < 0)  return { label, life:"(expired)", cls:"exp-bad",  dead:true };
+  if(left === 0) return { label, life:"(this month)", cls:"exp-bad", dead:false };
+  let life;
+  if(left < 12) life = "(" + left + " mo)";
+  else{
+    const yy = Math.floor(left / 12), mm = left % 12;
+    life = "(" + yy + " y" + (mm ? " " + mm + " m" : "") + ")";
+  }
+  return { label, life, cls: left <= 6 ? "exp-soon" : "", dead:false };
+}
+
+function discount(d){ return (d.p - d.r) / d.p * 100; }
+
+const panel = $("panel"), qIn = $("q"), rowsEl = $("rows"), msEl = $("ms");
+const totalEl = $("total"), savedEl = $("saved"), hintEl = $("hint");
+let results = [], sel = 0, bill = [], taken = false, paidFlash = false;
+
+function search(raw){
+  const q = raw.trim().toLowerCase();
+  if(!q){ results = []; msEl.textContent = ""; return; }
+  const t0 = performance.now();
+  const toks = q.split(/\s+/);
+  const out = [];
+  for(const d of DRUGS){
+    const hay = (d.n + " " + d.s + " " + d.d + " " + d.f + " " + d.m + " " + d.b).toLowerCase();
+    if(toks.every(t => hay.includes(t))){
+      const name = d.n.toLowerCase();
+      out.push({ d, k: name.startsWith(q) ? 0 : (name.includes(q) ? 1 : 2), x: expiry(d.e) });
+    }
+  }
+  /* best name match first, then nearest usable expiry, expired last */
+  out.sort((a,b) =>
+    (a.x.dead - b.x.dead) || (a.k - b.k) ||
+    a.d.e.localeCompare(b.d.e) || a.d.n.localeCompare(b.d.n));
+  const ms = performance.now() - t0;
+  results = out.slice(0,5).map(x => x.d);
+  msEl.textContent = out.length
+    ? out.length + (out.length === 1 ? " match \u00B7 " : " matches \u00B7 ") + ms.toFixed(2) + " ms"
+    : "no match \u00B7 " + ms.toFixed(2) + " ms";
+  sel = 0;
+}
+
+function resultRow(d, i){
+  const x = expiry(d.e), off = discount(d);
+  const low = d.k <= 10;
+  return '<tr class="' + (i === sel ? "focus " : "") + (x.dead ? "dead " : "") + 'anim" data-i="' + i + '">' +
+    '<td>' +
+      '<div class="ln1">' + d.n + '<span class="form">' + d.f + '</span></div>' +
+      '<div class="ln2">' + d.s + " \u00B7 " + d.d + " \u00B7 " + d.m + '</div>' +
+    '</td>' +
+    '<td class="c-batch">' +
+      '<div class="ln1">' + d.b + '</div>' +
+      '<div class="ln2 ' + x.cls + '">' + x.label + " " + x.life + '</div>' +
+    '</td>' +
+    '<td class="c-qty num">' +
+      '<div class="ln1' + (low ? " qty-low" : "") + '">' + d.k + '</div>' +
+      '<div class="ln2">' + (low ? "low" : "in stock") + '</div>' +
+    '</td>' +
+    '<td class="c-rate num">' +
+      '<div class="ln1">' + money(d.r) + '</div>' +
+      '<div class="ln2"><span class="mrp">' + money(d.p) + '</span> ' +
+        '<span class="off">' + off.toFixed(1) + '%</span></div>' +
+    '</td></tr>';
+}
+
+function billRow(l){
+  const x = expiry(l.e);
+  return '<tr class="line' + (paidFlash ? " paidrow" : "") + ' anim">' +
+    '<td>' +
+      '<div class="ln1">' + l.n + '<span class="form">' + l.f + '</span></div>' +
+      '<div class="ln2">' + l.s + " \u00B7 " + l.d + '</div>' +
+    '</td>' +
+    '<td class="c-batch">' +
+      '<div class="ln1">' + l.b + '</div>' +
+      '<div class="ln2 ' + x.cls + '">' + x.label + " " + x.life + '</div>' +
+    '</td>' +
+    '<td class="c-qty num">' +
+      '<div class="ln1">' + l.q + '</div><div class="ln2">nos</div>' +
+    '</td>' +
+    '<td class="c-rate num">' +
+      '<div class="ln1">' + money(l.r * l.q) + '</div>' +
+      '<div class="ln2">' + money(l.r) + " each" + '</div>' +
+    '</td></tr>';
+}
+
+function render(){
+  if(results.length)      rowsEl.innerHTML = results.map(resultRow).join("");
+  else if(bill.length)    rowsEl.innerHTML = bill.map(billRow).join("");
+  else rowsEl.innerHTML = '<tr><td class="empty" colspan="4">' +
+      (qIn.value.trim() ? "Nothing by that name."
+        : inviting ? "Your turn \u2014 search above." : "No items yet. Search above.") + '</td></tr>';
+
+  const net  = bill.reduce((s,l) => s + l.r * l.q, 0);
+  const mrp  = bill.reduce((s,l) => s + l.p * l.q, 0);
+  totalEl.textContent = rupee(net);
+  savedEl.textContent = net && mrp > net ? "saved \u20B9" + money(mrp - net) + " on MRP" : "";
+}
+
+function add(){
+  if(!results.length) return;
+  const d = results[sel];
+  if(expiry(d.e).dead){
+    msEl.textContent = "expired batch \u00B7 cannot be billed";
+    return;
+  }
+  const found = bill.find(l => l.b === d.b);
+  if(found) found.q++;
+  else bill.push({ n:d.n, s:d.s, d:d.d, f:d.f, b:d.b, e:d.e, r:d.r, p:d.p, q:1 });
+  qIn.value = ""; results = []; msEl.textContent = ""; paidFlash = false;
+  render(); markStep(2);
+}
+
+function pay(mode){
+  if(!bill.length) return;
+  const amt = rupee(bill.reduce((s,l) => s + l.r * l.q, 0));
+  paidFlash = true; results = []; qIn.value = "";
+  render();
+  msEl.textContent = mode + " " + amt + " \u00B7 printing";
+  markStep(3);
+  setTimeout(() => { bill = []; paidFlash = false; msEl.textContent = ""; render(); }, 1600);
+}
+
+function clearBill(){
+  bill = []; results = []; qIn.value = ""; msEl.textContent = ""; paidFlash = false;
+  render();
+}
+
+/* ---- demo \u2192 invitation \u2192 the visitor drives ---- */
+const modeEl = $("mode"), searchRow = document.querySelector(".search");
+const stepEls = [...document.querySelectorAll(".step")];
+const done = [false, false, false, false];
+let inviting = false;
+
+const fine = () => window.matchMedia("(hover:hover) and (pointer:fine)").matches;
+function focusInput(){ if(fine()) qIn.focus({ preventScroll:true }); }
+
+function paintSteps(){
+  const next = done.indexOf(false);
+  stepEls.forEach((el,i) => {
+    el.classList.toggle("done", done[i]);
+    el.classList.toggle("now", taken && i === next);
+  });
+}
+
+function markStep(i){
+  if(!taken || done[i]) return;
+  done[i] = true;
+  paintSteps();
+  if(done.every(Boolean)){
+    hintEl.innerHTML = "That's the counter loop \u2014 and all of it just ran on this machine.";
+    btn.classList.add("nudge");
+  }
+}
+
+/* the demo stops on purpose and hands the counter over */
+function invite(){
+  if(taken) return;
+  inviting = true;
+  bill = []; results = []; qIn.value = ""; msEl.textContent = ""; paidFlash = false;
+  searchRow.classList.add("invite");
+  qIn.placeholder = "Type a medicine \u2014 try paracetamol";
+  modeEl.textContent = "Your turn";
+  hintEl.innerHTML = "<b>Your turn.</b> Search by name, salt, strength, maker or batch number.";
+  render();
+  const busy = document.activeElement && document.activeElement.tagName === "INPUT";
+  if(!busy) focusInput();
+}
+
+function takeOver(){
+  if(taken) return;
+  taken = true; inviting = false;
+  searchRow.classList.remove("invite");
+  panel.classList.add("live");
+  modeEl.textContent = "You're driving";
+  modeEl.classList.add("on");
+  qIn.placeholder = "Brand, molecule, strength, form, maker or batch\u2026";
+  hintEl.innerHTML = "<b>\u2191 \u2193</b> choose \u00B7 <b>Enter</b> add \u00B7 <b>F5</b> cash \u00B7 <b>F9</b> clear.";
+  if(!qIn.value){ bill = []; results = []; msEl.textContent = ""; paidFlash = false; render(); }
+  paintSteps();
+}
+
+/* pointer in = it's yours, immediately. nothing in a video does that. */
+panel.addEventListener("pointerenter", e => {
+  if(e.pointerType === "mouse"){ takeOver(); focusInput(); }
+});
+panel.addEventListener("click", takeOver);   /* tap, not touch-scroll */
+
+stepEls.forEach((el,i) => el.addEventListener("click", () => {
+  takeOver();
+  if(i === 0){
+    qIn.value = "paracetamol"; search(qIn.value); render(); markStep(0); focusInput();
+  }else if(i === 1){
+    if(!results.length){ qIn.value = "paracetamol"; search(qIn.value); markStep(0); }
+    if(results.length){ sel = (sel + 1) % results.length; }
+    render(); markStep(1);
+  }else if(i === 2){
+    if(!results.length){ qIn.value = "dolo 650"; search(qIn.value); markStep(0); }
+    add();
+  }else{
+    if(!bill.length){ qIn.value = "dolo 650"; search(qIn.value); add(); }
+    flashKey($("k5")); pay("Cash");
+  }
+}));
+
+function flashKey(el){ el.classList.add("hit"); setTimeout(() => el.classList.remove("hit"), 130); }
+
+qIn.addEventListener("input", () => {
+  takeOver(); search(qIn.value); render();
+  if(qIn.value.trim()) markStep(0);
+});
+qIn.addEventListener("focus", takeOver);
+rowsEl.addEventListener("click", e => {
+  const tr = e.target.closest("tr[data-i]");
+  if(!tr) return;
+  takeOver(); sel = +tr.dataset.i; render(); markStep(1); add(); focusInput();
+});
+$("k5").addEventListener("click", () => { takeOver(); flashKey($("k5")); pay("Cash"); });
+$("k6").addEventListener("click", () => { takeOver(); flashKey($("k6")); pay("UPI"); });
+$("k9").addEventListener("click", () => { takeOver(); flashKey($("k9")); clearBill(); });
+
+document.querySelectorAll(".try").forEach(b => b.addEventListener("click", () => {
+  takeOver();
+  qIn.value = b.dataset.t;
+  search(qIn.value); render(); markStep(0); focusInput();
+}));
+
+document.addEventListener("keydown", e => {
+  const typing = document.activeElement === qIn;
+  if(e.key === "/" && !typing && document.activeElement !== input){
+    e.preventDefault(); takeOver(); qIn.focus(); return;
+  }
+  if(!typing) return;
+  if(e.key === "ArrowDown"){ e.preventDefault(); if(results.length){ sel = (sel + 1) % results.length; render(); markStep(1); } }
+  else if(e.key === "ArrowUp"){ e.preventDefault(); if(results.length){ sel = (sel - 1 + results.length) % results.length; render(); markStep(1); } }
+  else if(e.key === "Enter"){ e.preventDefault(); add(); }
+  else if(e.key === "Escape"){ qIn.value = ""; search(""); render(); }
+  else if(e.key === "F5"){ e.preventDefault(); flashKey($("k5")); pay("Cash"); }
+  else if(e.key === "F6"){ e.preventDefault(); flashKey($("k6")); pay("UPI"); }
+  else if(e.key === "F9"){ e.preventDefault(); flashKey($("k9")); clearBill(); }
+});
+
+/* attract mode - drives the same machinery until someone takes over */
+async function typeInto(text){
+  for(let c = 1; c <= text.length; c++){
+    if(taken) return;
+    qIn.value = text.slice(0,c);
+    search(qIn.value); render();
+    await wait(80);
+  }
+}
+async function heroDemo(){
+  await wait(600);
+  await typeInto("paracetamol");        if(taken) return; await wait(1400);
+  sel = 1; render();                    if(taken) return; await wait(750);
+  add();                                if(taken) return; await wait(950);
+  await typeInto("pantop");             if(taken) return; await wait(1100);
+  add();                                if(taken) return; await wait(1000);
+  flashKey($("k5")); pay("Cash");       if(taken) return; await wait(2400);
+  invite();                             /* stop, and hand it over */
+}
+
+/* ================= tile 1 - the outbox ================= */
+const slots = [...document.querySelectorAll("#queue span")];
+const netchip = $("netchip"), netnote = $("netnote"), wire = $("wire"), netbtn = $("netbtn");
+let netAuto = true, online = false, queued = 0, netTimer = null;
+
+function chipState(el, cls, label){ el.className = "chip " + cls; el.innerHTML = "<i></i> " + label; }
+function drawQueue(){ slots.forEach((s,i) => s.className = i < queued ? "filled" : ""); }
+
+function goOffline(){
+  online = false; queued = 0; drawQueue();
+  chipState(netchip, "", "Offline"); wire.className = "wire";
+  netbtn.textContent = "Reconnect";
+  netnote.textContent = "Line is down. Billing continues.";
+  clearInterval(netTimer);
+  netTimer = setInterval(() => {
+    if(queued < slots.length){
+      queued++; drawQueue();
+      netnote.innerHTML = "<b>" + queued + "</b> bill" + (queued > 1 ? "s" : "") + " held on this machine";
+    }
+  }, 700);
+}
+
+async function goOnline(){
+  clearInterval(netTimer);
+  online = true;
+  netbtn.textContent = "Pull the cable";
+  chipState(netchip, "is-sync", "Syncing"); wire.className = "wire live";
+  for(let i = 0; i < queued; i++){
+    slots[i].className = "sending"; await wait(140);
+    slots[i].className = "done";
+    netnote.innerHTML = "Backing up \u00B7 <b>" + (queued - i - 1) + "</b> left";
+    await wait(230);
+  }
+  chipState(netchip, "is-ok", "Up to date"); wire.className = "wire";
+  netnote.textContent = "Every bill safely off the machine.";
+}
+
+netbtn.addEventListener("click", () => {
+  netAuto = false;
+  if(online) goOffline(); else goOnline();
+});
+
+async function netDemo(){
+  while(netAuto){
+    goOffline();
+    await wait(5600); if(!netAuto) return;
+    await goOnline();  if(!netAuto) return;
+    await wait(2600);
+  }
+}
+
+/* ================= tile 2 - four keystrokes ================= */
+const caps = [...document.querySelectorAll(".cap")];
+const kbq = $("kbq"), kbr0 = $("kbr0"), kbr1 = $("kbr1"), kbnote = $("kbnote");
+const CARET = '<span class="c"></span>';
+let kbAuto = true, kbStep = 0;
+
+function kbHit(i){ caps.forEach(c => c.classList.remove("hit")); if(i > -1) caps[i].classList.add("hit"); }
+
+function kbRender(step){
+  kbStep = step;
+  kbHit(step - 1);
+  if(step === 0){
+    kbq.innerHTML = "&nbsp;";
+    kbr0.className = "kb-row"; kbr1.className = "kb-row";
+    kbr0.innerHTML = "<span>PAN 40 TAB</span><span>126.00</span>";
+    kbr1.innerHTML = "<span>PANTOP 40 TAB</span><span>118.75</span>";
+    kbnote.innerHTML = "&nbsp;";
+  }else if(step === 1){
+    kbq.innerHTML = "/ pan 4" + CARET;
+    kbr0.className = "kb-row show sel"; kbr1.className = "kb-row show";
+    kbnote.textContent = "Search";
+  }else if(step === 2){
+    kbr0.className = "kb-row show"; kbr1.className = "kb-row show sel";
+    kbnote.textContent = "Next match";
+  }else if(step === 3){
+    kbq.innerHTML = "1 \u00D7 PANTOP 40 TAB";
+    kbr0.className = "kb-row show sel";
+    kbr0.innerHTML = "<span>PANTOP 40 TAB \u00D7 1</span><span>118.75</span>";
+    kbr1.className = "kb-row";
+    kbnote.innerHTML = "Added \u00B7 batch <b>PT4407</b>";
+  }else{
+    kbr0.className = "kb-row show paid";
+    kbr0.innerHTML = "<span>CASH RECEIVED</span><span>118.75</span>";
+    kbnote.innerHTML = "Paid <b>\u20B9118.75</b> \u00B7 printing";
+  }
+}
+
+caps.forEach((c,i) => c.addEventListener("click", () => {
+  kbAuto = false;
+  kbRender(kbStep === 4 ? 0 : i + 1);
+}));
+
+async function kbDemo(){
+  while(kbAuto){
+    for(let s = 0; s <= 4; s++){
+      if(!kbAuto) return;
+      kbRender(s);
+      await wait(s === 0 ? 800 : s === 4 ? 1900 : 950);
+    }
+  }
+}
+
+/* ================= tile 3 - expiry ================= */
+const F = [$("f0"), $("f1"), $("f2")];
+const fefonote = $("fefonote"), fefocount = $("fefocount");
+let fefoAuto = true;
+
+function fefoPick(i){
+  F.forEach(r => { r.className = "fefo-row seen"; r.querySelector(".t").textContent = ""; });
+  if(i === 0){
+    F[0].className = "fefo-row seen bad shake";
+    F[0].querySelector(".t").textContent = "EXPIRED";
+    fefonote.innerHTML = "Expired batch \u2014 <b>blocked</b> from sale";
+    setTimeout(() => F[0].classList.remove("shake"), 300);
+    F[1].className = "fefo-row seen pick";
+    F[1].querySelector(".t").textContent = "USED INSTEAD";
+  }else if(i === 1){
+    F[1].className = "fefo-row seen pick";
+    F[1].querySelector(".t").textContent = "SELECTED";
+    fefonote.innerHTML = "Nearest expiry moves first \u00B7 <b>42 days</b> left";
+  }else{
+    F[1].className = "fefo-row seen pick";
+    F[1].querySelector(".t").textContent = "SELECTED";
+    F[2].querySelector(".t").textContent = "HELD BACK";
+    fefonote.innerHTML = "Nearer expiry goes out before this one.";
+  }
+  fefocount.textContent = "2 usable";
+}
+
+F.forEach((r,i) => {
+  const act = () => { fefoAuto = false; fefoPick(i); };
+  r.addEventListener("click", act);
+  r.addEventListener("keydown", e => { if(e.key === "Enter" || e.key === " "){ e.preventDefault(); act(); } });
+});
+
+async function fefoDemo(){
+  while(fefoAuto){
+    F.forEach(r => { r.className = "fefo-row"; r.querySelector(".t").textContent = ""; });
+    fefocount.textContent = "3 batches"; fefonote.innerHTML = "&nbsp;";
+    await wait(700); if(!fefoAuto) return;
+
+    for(const r of F){ r.classList.add("seen"); await wait(220); }
+    await wait(300); if(!fefoAuto) return;
+
+    F[0].classList.add("scan"); fefonote.textContent = "Checking oldest first\u2026";
+    await wait(700); if(!fefoAuto) return;
+    F[0].classList.remove("scan"); F[0].classList.add("bad");
+    F[0].querySelector(".t").textContent = "EXPIRED";
+    fefonote.innerHTML = "Expired batch <b>blocked</b> from sale";
+    await wait(1300); if(!fefoAuto) return;
+
+    F[1].classList.add("scan"); await wait(600); if(!fefoAuto) return;
+    F[1].classList.remove("scan"); F[1].classList.add("pick");
+    F[1].querySelector(".t").textContent = "SELECTED";
+    fefonote.innerHTML = "Nearest expiry moves first \u00B7 <b>42 days</b> left";
+    await wait(1500); if(!fefoAuto) return;
+
+    F[2].querySelector(".t").textContent = "IN RESERVE";
+    fefocount.textContent = "2 usable";
+    await wait(2000);
+  }
+}
+
+/* ---------------- start ---------------- */
+search("zz"); results = []; msEl.textContent = "";   /* warm-up: keep the first shown timing honest */
+render();
+
+if(still){
+  invite();
+  queued = 4; drawQueue(); chipState(netchip, "", "Offline");
+  netnote.innerHTML = "<b>4</b> bills held on this machine";
+  netAuto = false; kbAuto = false; fefoAuto = false;
+  kbRender(3);
+  F.forEach(r => r.classList.add("seen")); fefoPick(1);
+}else{
+  heroDemo();
+  const watch = (el, fn) => {
+    if(!("IntersectionObserver" in window)) return fn();
+    new IntersectionObserver((es,o) => {
+      if(es.some(e => e.isIntersecting)){ fn(); o.disconnect(); }
+    }, { threshold:.2 }).observe(el);
+  };
+  watch($("tiles"), () => { netDemo(); kbDemo(); fefoDemo(); });
+}
+</script>
+
+</body>
+</html>
